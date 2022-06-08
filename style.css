@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.nav-container {
+    height: 80vh;
+    background-color: aqua;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+}
+
+.nav-container > * {
+    border: 3px solid blue;
+    margin: 6px;
+    background-color: yellow;
+    width: 200px;
+}
+
+.nav-item-1 {
+    min-height: 350px;
+}
+
+.nav-item-2 {
+    min-height: 200px;
+    flex-shrink: 0;
+}
+
+.nav-item-3 {
+    min-height: 200px;
+    flex-shrink: 1;
+}
+
+.nav-item-4 {
+    min-height: 250px;
+}
+
+.nav-item-5 {
+    min-height: 150px;
+}
+
+/* flex-basis: tells where to start growing or shrinking from. It overrides the initial width set for the items.
+    flex-grow: divides the available space in the ratio indicated by flex-grow. By default, flex-grow: 0.
+    flex-shrink: By default: 1 meaning all items shrink proportionally. If 2, then the object ends of having half the size of other objects in the final layout. */
+
+/* align-self: overrides the align items of parent container. align-items: stretch by default. If not height is set of the parent container, it'll stretch to the maximum height
+    of it's child container and rest of the child containers stretch to the height of parent container.*/
+
+/* Default
+    flex: 0 1 auto; */
